@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28284211'))
-API_HASH = environ.get('API_HASH', '6b0afc140b8534c45de9dc77b7d37415')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5634679884:AAH6KjE4JbS5rD3ljyZSJZJx6I-rbz5WYG4")
+API_ID = int(environ.get('API_ID', '27710337'))
+API_HASH = environ.get('API_HASH', '354e1dd8e1e3041ee2145196da8d6aac')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6862905751:AAGsoAruxnJ8K1fz20dfUVLX9v9jXD232k8")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,8 +27,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtodownloadmoviestamilhd/
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1999977924').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001505492751').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6018060368').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002024156024').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
